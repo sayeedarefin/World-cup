@@ -1,0 +1,242 @@
+/* <!-- ================== banner style========================= --> */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    /* max-width: fit-content; */
+}
+.banner{
+    margin: 100px;
+    display: flex;
+    align-items: center;
+    background-color:#161616;
+    width: 90%;
+    height: 646px;
+    border: 1px solid black;
+    border-radius: 30px;
+    color: white;
+    justify-content: center;
+}
+.banner-info{
+    font-weight: 700;
+    padding-left: 105px;
+}
+.banner-info h1{
+    font-size: 4em;
+}
+.banner-image img{
+    width: 500px;
+    height: 550px;
+}
+.button{
+    width: 172px;
+    height: 36px;
+    padding: 16px 25px 16px 25px;
+    margin-top: 50px;
+    border-radius: 5px;
+    background-color: #DD0000;
+}
+.button a{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+/* =================Menu Styles============================ */
+.menu-and-cards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.menu{
+    width: 312px;
+    height: 312px;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 100px;
+}
+.menu-button{
+    width: 172px;
+    height: 36px;
+    padding: 16px 25px 16px 25px;
+    border-radius: 5px;
+    background-color: #DD0000;
+    
+
+}
+.menu-button a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+/* ===================cards styles================= */
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    row-gap: 40px;
+}
+.card{
+    width: 312px;
+    height: 365px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    }
+    .transfer{
+    border: 1px solid black;
+    border-radius: 5px;
+    width:100px;
+    height: 22px;
+    padding: 4px 16px 4px 16px;
+    margin-top:20px ;
+    margin-left: 20px;
+    text-align: center;
+}
+    .card-image img{
+        width: 312px;
+        height: 175px;
+    }
+    .card-info p{
+        padding-left: 20px;
+        padding-top: 30px;
+    }
+    .time-comment{
+    display: flex;
+    justify-content: space-evenly;
+    }
+    .time, .comment{
+        display: flex; 
+        align-items: center;
+    }
+/* =========================menu and cards========================= */
+.menu-and-cards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+/* ========================match style====================== */
+.matches{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    row-gap: 40px;
+}
+.match{
+    width: 312px;
+    height: 242px;
+    border: 1px solid grey;
+}
+.match-flags{
+    display: flex;
+    width: 252px;
+    height: 56px;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-left: 35px;
+}
+.match-info{
+    padding-left: 20px;
+    padding-top: 40px;
+    text-align: center;
+}
+/* ==================footer======================= */
+.footer{
+    width: 100%;
+    height: 250px;
+    background-color: #161616;
+    color: wheat;
+    text-align: center;
+    margin-top: 200px;
+    padding-top: 150px;
+}
+.footer h1{
+    padding-bottom: 100px;
+}
+.footer hr{
+    width: 85%;
+    margin-left: 104px;
+}
+.footer a{
+
+    color: wheat;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.last-line{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 40px;
+}
+
+/* =================media query================= */
+
+/* smaller device */
+@media screen and (max-width: 376px){
+    .banner{
+        width: 334px;
+        height: 472px;
+        flex-direction: column;
+    }
+    .banner-image img{
+        width: 233px;
+        height: 245px;
+        margin-top: -4px;
+        padding-left: 56px;
+    }
+    .banner-info h1{
+        font-size: 22px;
+        text-align: center;
+   
+    }
+    .banner-info p{
+        font-size: 14px;
+    }
+    .button{
+        margin-top: -20px;
+  
+    }
+    .button a{
+        width: 160px;
+        height: 40px;
+        padding: 8px 12px 8px 12px;
+    }
+    .menu-and-cards{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .footer h1{
+        padding-bottom: 20px;
+    }
+    .last-line{
+        flex-direction: column;
+    }
+}
+/* medium device */
+@media screen and (min-width: 377px) and (max-width:768px) {
+    .banner{
+        width: 50px;
+        height: 398px;
+    }
+    .banner-image img{
+        width: 323px;
+        height: 340px;
+    }
+}
